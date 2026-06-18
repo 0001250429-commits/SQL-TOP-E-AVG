@@ -146,3 +146,177 @@ FROM OrderDetails
 Order by OrderID,
 ProductID
 LIMIT 12
+
+26
+SELECT *
+FROM OrderDetails
+WHERE ProductID % 3 = 0
+ORDER BY Quantity
+LIMIT 7;
+
+27
+SELECT *
+FROM OrderDetails
+WHERE OrderDetailID BETWEEN 5 AND 50
+ORDER BY OrderID
+LIMIT 10;
+
+28
+SELECT *
+FROM OrderDetails
+ORDER BY Quantity DESC,
+ProductID
+LIMIT 6;
+
+29
+SELECT *
+FROM OrderDetails
+WHERE ProductID % 2 <> 0
+ORDER BY Quantity
+LIMIT 4;
+
+30
+SELECT *
+FROM OrderDetails
+WHERE OrderID > 15
+ORDER BY ProductID
+LIMIT 8;
+
+31
+SELECT *
+FROM OrderDetails
+WHERE Quantity < 5
+ORDER BY OrderID
+LIMIT 3;
+
+32
+SELECT *
+FROM OrderDetails
+WHERE ProductID % 2 = 0
+ORDER BY OrderID
+LIMIT 5;
+
+33
+SELECT *
+FROM OrderDetails
+ORDER BY OrderDetailID DESC
+LIMIT 10;
+
+34
+SELECT *
+FROM OrderDetails
+WHERE Quantity % 5 = 0
+ORDER BY ProductID
+LIMIT 7;
+
+35
+SELECT *
+FROM OrderDetails
+ORDER BY ProductID,
+OrderID
+LIMIT 2;
+
+36
+SELECT *
+FROM OrderDetails
+WHERE OrderID LIKE '%1'
+ORDER BY Quantity
+LIMIT 8;
+
+37
+SELECT *
+FROM OrderDetails
+ORDER BY OrderID DESC,
+OrderDetailID
+LIMIT 4;
+
+38
+SELECT *
+FROM OrderDetails
+WHERE Quantity > 30
+ORDER BY ProductID
+LIMIT 9;
+
+39
+SELECT *
+FROM OrderDetails
+ORDER BY ProductID,
+OrderID
+LIMIT 5;
+
+40
+SELECT *
+FROM OrderDetails
+ORDER BY OrderDetailID DESC,
+Quantity
+LIMIT 6;
+
+41
+SELECT *
+FROM OrderDetails
+WHERE OrderID % 2 <> 0
+ORDER BY Quantity
+LIMIT 10;
+
+42
+SELECT *
+FROM OrderDetails
+WHERE Quantity = 20
+ORDER BY ProductID
+LIMIT 3;
+
+43
+SELECT *
+FROM OrderDetails
+WHERE OrderDetailID < 200
+ORDER BY OrderID
+LIMIT 7;
+
+44
+SELECT *
+FROM OrderDetails
+WHERE OrderID BETWEEN 100 AND 200
+ORDER BY ProductID
+LIMIT 5;
+
+45
+SELECT *
+FROM OrderDetails
+ORDER BY Quantity DESC,
+OrderDetailID
+LIMIT 12;
+
+46
+SELECT *
+FROM OrderDetails
+WHERE ProductID < 10
+ORDER BY OrderID
+LIMIT 9;
+
+47
+SELECT *
+FROM OrderDetails
+WHERE OrderID LIKE '%0'
+ORDER BY Quantity
+LIMIT 2;
+
+48
+SELECT *
+FROM OrderDetails
+ORDER BY OrderID,
+ProductID
+LIMIT 5;
+
+49
+SELECT *
+FROM OrderDetails
+WHERE Quantity % 4 = 0
+ORDER BY ProductID
+LIMIT 6;
+
+50
+SELECT *
+FROM OrderDetails
+ORDER BY ProductID DESC,
+Quantity
+LIMIT 10;
