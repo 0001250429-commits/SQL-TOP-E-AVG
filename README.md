@@ -320,3 +320,303 @@ FROM OrderDetails
 ORDER BY ProductID DESC,
 Quantity
 LIMIT 10;
+
+
+1
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+ORDER BY Quantity;
+
+2
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderID > 10
+ORDER BY Quantity;
+
+3
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID = 5
+ORDER BY Quantity;
+
+4
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderDetailID < 50
+ORDER BY Quantity;
+
+5
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderID > 100
+ORDER BY Quantity;
+
+6
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID % 2 = 0
+ORDER BY Quantity;
+
+7
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderDetailID % 2 <> 0
+ORDER BY Quantity;
+
+8
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID BETWEEN 5 AND 15
+ORDER BY Quantity;
+
+9
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderID % 10 = 0
+ORDER BY Quantity;
+
+10
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderDetailID BETWEEN 10 AND 30
+ORDER BY Quantity;
+
+11
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE Quantity > 25
+ORDER BY MediaQuantidade;
+
+12
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE Quantity < 10
+ORDER BY MediaQuantidade;
+
+13
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID > 7
+ORDER BY MediaQuantidade;
+
+14
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderID < 20
+ORDER BY MediaQuantidade;
+
+15
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE Quantity % 5 = 0
+ORDER BY MediaQuantidade;
+
+16
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID < 12
+ORDER BY MediaQuantidade;
+
+17
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderID BETWEEN 15 AND 30
+ORDER BY MediaQuantidade;
+
+18
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE CAST(OrderDetailID AS CHAR) LIKE '2%'
+ORDER BY MediaQuantidade;
+
+19
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID > 10
+ORDER BY MediaQuantidade;
+
+20
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderID % 2 <> 0
+ORDER BY MediaQuantidade;
+
+21
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID % 3 = 0
+ORDER BY MediaQuantidade;
+
+22
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderDetailID > 30
+ORDER BY MediaQuantidade;
+
+23
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE Quantity BETWEEN 10 AND 20
+ORDER BY MediaQuantidade;
+
+24
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderID % 10 = 5
+ORDER BY MediaQuantidade;
+
+25
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID IN (3,5,7)
+ORDER BY MediaQuantidade;
+
+26
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE Quantity NOT BETWEEN 15 AND 25
+ORDER BY MediaQuantidade;
+
+27
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID BETWEEN 5 AND 15
+ORDER BY MediaQuantidade;
+
+28
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderID = 100
+ORDER BY MediaQuantidade;
+
+29
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderDetailID BETWEEN 100 AND 200
+ORDER BY MediaQuantidade;
+
+30
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE Quantity > 20
+ORDER BY MediaQuantidade;
+
+31
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID NOT IN (1,2,3)
+ORDER BY MediaQuantidade;
+
+32
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderDetailID % 10 = 2
+ORDER BY MediaQuantidade;
+
+33
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE Quantity % 2 = 0
+ORDER BY MediaQuantidade;
+
+34
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderID > 200
+ORDER BY MediaQuantidade;
+
+35
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID = 10
+ORDER BY MediaQuantidade;
+
+36
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderDetailID BETWEEN 50 AND 100
+ORDER BY MediaQuantidade;
+
+37
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE CAST(OrderID AS CHAR) LIKE '1%'
+ORDER BY MediaQuantidade;
+
+38
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID % 5 = 0
+ORDER BY MediaQuantidade;
+
+39
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE Quantity NOT IN (5,10,15)
+ORDER BY MediaQuantidade;
+
+40
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderDetailID < 10
+ORDER BY MediaQuantidade;
+
+41
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID > 20
+ORDER BY MediaQuantidade;
+
+42
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE Quantity = 15
+ORDER BY MediaQuantidade;
+
+43
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderDetailID IN (10,20,30)
+ORDER BY MediaQuantidade;
+
+44
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE Quantity BETWEEN 5 AND 10
+ORDER BY MediaQuantidade;
+
+45
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderID % 10 <> 3
+ORDER BY MediaQuantidade;
+
+46
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID > 30
+ORDER BY MediaQuantidade;
+
+-- 47
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderID < 100
+ORDER BY MediaQuantidade;
+
+48
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE ProductID BETWEEN 10 AND 50
+ORDER BY MediaQuantidade;
+
+49
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE Quantity % 4 = 0
+ORDER BY MediaQuantidade;
+
+50
+SELECT AVG(Quantity) AS MediaQuantidade
+FROM OrderDetails
+WHERE OrderDetailID % 10 = 0
+ORDER BY MediaQuantidade;
